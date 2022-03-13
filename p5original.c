@@ -16,7 +16,7 @@ void erotosthenes_sieve(int n, int a[n])
 { 
   for(int i = 2; i*i <= n; i++)
 	{
-		if(a[i] != -1)
+		if(a[i] !=-1)
 		{
 			//Mark all the multiples of i as -1.
 			for(int j = i*i; j <=n ; j += i)
@@ -29,7 +29,7 @@ void out_put(int n, int a[n])
   printf("Prime numbers are: \n");
 	for(int i=2; i <= n; i++)
 	{
-		if(a[i] != -1)
+		if(a[i] !=-1)
 		{
 			printf("%d ", i);
 		}
