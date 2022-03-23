@@ -1,23 +1,24 @@
+#include<stdio.h>
 struct _point
 {
 float x,y;
-}
-typedef Point;
+};
+typedef struct _point Point;
 
 struct _line
 {
 Point p1,p2;
 float distance;
-}
-typedef Line;
+};
+typedef struct _line Line;
 
 struct _polygon
 {
 int n;
 Line l[100];
 float perimenter;
-}
-typedef Polygon;
+};
+typedef struct _polygon Polygon;
 
 int input_n()
 {
