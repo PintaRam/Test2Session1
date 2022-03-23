@@ -11,12 +11,14 @@ int str_reverse(char *string, char *substring)
   while (substring[i]!='\0')
     if(substring[i]==string[j])
     {
-     return j;
+      i++;
+      j++;
     }
   else
   {
     j++;
   }
+  return i;
   
   
 }
