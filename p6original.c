@@ -23,20 +23,24 @@ int str_reverse(char *string, char *substring)
    int i, j, a;
    i = 0, j = 0;
  
-   while (string[i] != '\0') {
+   while (string[i] != '\0')
+     {
  
       while (string[i] != substring[0] && string[i] != '\0')
+        {
          i++;
+        }
  
       if (string[i] == '\0')
          return (-1);
  
       a = i;
  
-      while (string[i] == substring[j] && string[i] != '\0' && substring[j] != '\0') {
+      while (string[i] == substring[j] && string[i] != '\0' && substring[j] != '\0')
+        {
          i++;
          j++;
-      }
+        }
  
       if (substring[j] == '\0')
          return (a);
