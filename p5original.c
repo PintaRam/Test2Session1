@@ -26,7 +26,8 @@ void erotosthenes_sieve(int n, int a[n])
 	}
 }
 void out_put(int n, int a[n])
-{
+{ if(n >= 2)
+  {
   printf("Prime numbers are: \n");
 	for(int i=2; i <= n; i++)
 	{
@@ -34,8 +35,14 @@ void out_put(int n, int a[n])
 		{
 			printf("%d ", i);
 		}
+  }
+   }
+    else
+    {
+      printf("prime numbers does not exits");
+    }
 	}
-}
+
 int main()
 {
   int n;
