@@ -1,3 +1,4 @@
+// a program to find all the prime numbers between erotosthenes sieve method.
 #include<stdio.h>
 int input_array_size()
 {
